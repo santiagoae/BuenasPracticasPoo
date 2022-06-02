@@ -9,12 +9,17 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Santiago Avendaño y Andres Lopez 
+ * @author Santiago Avendaño y Andres Lopez
  */
 public interface BibliotecaInterfaz {
-    
+
     public void FiltrarCancionesMismoGenero();
+
     public void FiltrarCancionesMismoAño();
-    public void Mostrar(ArrayList<Cancion> c);
-    public void Ordenar();
+
+    public void MostrarOrdenado(ArrayList<Cancion> c);
+
+    public void OrdenarAño();
+
+    public void OrdenarDuracion();
 }
