@@ -1,11 +1,11 @@
-
 package Clases;
+
 /**
  *
- * @author Santiago Avendaño y Andres Lopez 
+ * @author Santiago Avendaño y Andres Lopez
  */
 public class Cancion {
-    
+
     private String Titulo;
     private int Id;
     private int Año;
@@ -13,9 +13,9 @@ public class Cancion {
     private String Genero;
     private String Caratula;
     private String Descripcion;
-    
-    public Cancion(){
-        
+
+    public Cancion() {
+
     }
 
     public String getTitulo() {
@@ -73,20 +73,16 @@ public class Cancion {
     public void setDescripcion(String Descripcion) {
         this.Descripcion = Descripcion;
     }
-    
-     
+
     public void Mostrar() {
-        System.out.println("Titulo de la cancion: "+getTitulo());
-        System.out.println("Indetificacion: "+getId());
-        System.out.println("Fecha de la cancion: "+getAño());
-        System.out.println("Duracion de la cancion: "+getDuracion());
-        System.out.println("Genero de la cancion: "+getGenero());
-        System.out.println("Caratula: "+getCaratula());
-        System.out.println("Descripcion: "+getDescripcion());
-        
+        System.out.println("Titulo de la cancion: " + getTitulo());
+        System.out.println("Indetificacion: " + getId());
+        System.out.println("Fecha de la cancion: " + getAño());
+        System.out.println("Duracion de la cancion: " + getDuracion() +" Minutos");
+        System.out.println("Genero de la cancion: " + getGenero());
+        System.out.println("Caratula: " + getCaratula());
+        System.out.println("Descripcion: " + getDescripcion());
+
     }
 
-   
-    
-       
 }
