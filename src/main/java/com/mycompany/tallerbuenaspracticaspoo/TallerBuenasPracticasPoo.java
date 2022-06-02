@@ -1,17 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.tallerbuenaspracticaspoo;
+
+import Clases.Biblioteca;
+import Clases.Cancion;
 
 /**
  *
- * @author kawa
+ * @author Santiago Avendaño y Andres Lopez 
  */
 public class TallerBuenasPracticasPoo {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Biblioteca b = new Biblioteca();
+        Cancion c = new Cancion();
+        c.setCaratula("Linda");
+        c.setDescripcion("muy buena");
+        c.setDuracion(2.5);
+        c.setFecha("05/06/2022");
+        c.setGenero("Terror");
+        c.setId(0);
+        c.setTitulo("Sobeteo guayoteo ft pitbull");
+        b.setTema(c);
+        b.Llenar();
+        b.FiltrarCancionesMismoGenero();
     }
 }

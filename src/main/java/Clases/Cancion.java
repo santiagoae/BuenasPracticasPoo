@@ -4,9 +4,11 @@
  */
 package Clases;
 
+import Interfaz.BibliotecaInterfaz;
+
 /**
  *
- * @author kawa
+ * @author Santiago Avendaño y Andres Lopez 
  */
 public class Cancion {
     
@@ -78,6 +80,19 @@ public class Cancion {
         this.Descripcion = Descripcion;
     }
     
+     
+    public void Mostrar() {
+        System.out.println("Titulo de la cancion: "+getTitulo());
+        System.out.println("Indetificacion: "+getId());
+        System.out.println("Fecha de la cancion: "+getFecha());
+        System.out.println("Duracion de la cancion: "+getDuracion());
+        System.out.println("Genero de la cancion: "+getGenero());
+        System.out.println("Caratula: "+getCaratula());
+        System.out.println("Descripcion: "+getDescripcion());
+        
+    }
+
+   
     
        
 }

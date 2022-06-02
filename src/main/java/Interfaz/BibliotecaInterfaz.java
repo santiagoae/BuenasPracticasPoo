@@ -6,11 +6,12 @@ package Interfaz;
 
 /**
  *
- * @author kawa
+ * @author Santiago Avendaño y Andres Lopez 
  */
 public interface BibliotecaInterfaz {
     
     public void FiltrarCancionesMismoGenero();
     public void FiltrarCancionesMismoAño();
     public void Mostrar();
+    public void Ordenar();
 }
