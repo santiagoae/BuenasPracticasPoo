@@ -4,14 +4,65 @@
  */
 package Clases;
 
+import Interfaz.BibliotecaInterfaz;
 import java.util.ArrayList;
+import java.util.Scanner;
+
 
 /**
  *
- * @author kawa
+ * @author Santiago Avendaño y Andres Lopez 
  */
-public class Biblioteca {
+public class Biblioteca implements BibliotecaInterfaz {
+    Scanner teclado = new Scanner(System.in);
+    private  Cancion Tema = new Cancion();
+    private  ArrayList<Cancion> Canciones = new ArrayList<Cancion>(); 
+
+    public Cancion getTema() {
+        return Tema;
+    }
     
-    private final Cancion Tema = new Cancion();
-    private final ArrayList<Cancion> Canciones = new ArrayList<Cancion>(); 
+    public void setTema(Cancion c){
+        this.Tema = c;
+        
+    }
+
+    public ArrayList<Cancion> getCanciones() {
+        return Canciones;
+    }
+    
+    public void Llenar(){
+        
+        Canciones.add(getTema()); 
+        
+    }
+    
+
+    @Override
+    public void FiltrarCancionesMismoGenero() {
+        System.out.println("Digite el genero a buscar");
+        String Genero = teclado.next();
+        int posicion = Canciones.indexOf(Genero);
+        if (posicion >= 0)
+            Canciones.get(posicion).Mostrar();
+            else
+            System.out.println("El elemento " + Genero + " NO está en la lista");
+}
+
+    @Override
+    public void FiltrarCancionesMismoAño() {
+        
+    }
+
+    @Override
+    public void Mostrar() {
+        
+    }
+
+    @Override
+    public void Ordenar() {
+        
+    }
+    
+    
 }
