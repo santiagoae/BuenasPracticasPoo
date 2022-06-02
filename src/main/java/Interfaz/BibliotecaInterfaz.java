@@ -4,6 +4,9 @@
  */
 package Interfaz;
 
+import Clases.Cancion;
+import java.util.ArrayList;
+
 /**
  *
  * @author Santiago Avendaño y Andres Lopez 
@@ -12,6 +15,6 @@ public interface BibliotecaInterfaz {
     
     public void FiltrarCancionesMismoGenero();
     public void FiltrarCancionesMismoAño();
-    public void Mostrar();
+    public void Mostrar(ArrayList<Cancion> c);
     public void Ordenar();
 }

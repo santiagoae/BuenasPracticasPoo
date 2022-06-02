@@ -1,11 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Clases;
-
-import Interfaz.BibliotecaInterfaz;
-
 /**
  *
  * @author Santiago Avendaño y Andres Lopez 
@@ -14,7 +8,7 @@ public class Cancion {
     
     private String Titulo;
     private int Id;
-    private String Fecha;
+    private int Año;
     private double Duracion;
     private String Genero;
     private String Caratula;
@@ -40,12 +34,12 @@ public class Cancion {
         this.Id = Id;
     }
 
-    public String getFecha() {
-        return Fecha;
+    public int getAño() {
+        return Año;
     }
 
-    public void setFecha(String Fecha) {
-        this.Fecha = Fecha;
+    public void setAño(int Año) {
+        this.Año = Año;
     }
 
     public double getDuracion() {
@@ -84,7 +78,7 @@ public class Cancion {
     public void Mostrar() {
         System.out.println("Titulo de la cancion: "+getTitulo());
         System.out.println("Indetificacion: "+getId());
-        System.out.println("Fecha de la cancion: "+getFecha());
+        System.out.println("Fecha de la cancion: "+getAño());
         System.out.println("Duracion de la cancion: "+getDuracion());
         System.out.println("Genero de la cancion: "+getGenero());
         System.out.println("Caratula: "+getCaratula());
